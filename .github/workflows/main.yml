@@ -1,0 +1,22 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # At 00:00.
+    # See: https://crontab.guru/#0_0_*_*_*
+    - cron: "0 0 * * *"
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npx sync-glitch-cli
+        env:
+          GLITCH_PROJECT_ID: '${{ secrets.projectId }}'
+          GLITCH_TOKEN: '${{ secrets.authToken }}'
+          GH_REPO: "mesemi/dmdbot"
