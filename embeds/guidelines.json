@@ -1,0 +1,63 @@
+{
+  "content": null,
+  "embeds": [
+    {
+      "title": "Medical Department Guidelines",
+      "description": "This area describes the duties of Medical Department Personnel, how to complete them, and what rules they should follow in their pursuit of maintaining the health of all personnel within the Foundation.",
+      "color": 3373995,
+      "fields": [
+        {
+          "name": "[] Section I - Ground Rules []",
+          "value": "t"
+        },
+        {
+          "name": "[] Section II - General Duties []",
+          "value": "a"
+        },
+        {
+          "name": "[] Section III - Checkup Procedures []",
+          "value": "a"
+        },
+        {
+          "name": "[] Section IV - MD Bot Usage []",
+          "value": "a"
+        }
+      ],
+      "author": {
+        "name": "Overseer of MD",
+        "icon_url": "https://t2.rbxcdn.com/3e120be41353beca0cf08596f12cb4a4"
+      },
+      "footer": {
+        "text": "Dauhxe's SCPF",
+        "icon_url": "https://t0.rbxcdn.com/2c4ae5e7a2b10d4df5dd57dc316c6c32"
+      }
+    },
+    {
+      "title": "Medical Department Ranking Structure",
+      "description": "This is a comprehensive list on how the Medical Department handles its ranks.",
+      "color": 3373995,
+      "fields": [
+        {
+          "name": "High Ranks",
+          "value": "<>The Overseer\nThe Overseer acts as an overwatch on the department, making sure its duties run smoothly, and its best wishes are represented within the Council, however keeping a fairly hands-off approach. Recieves Omni clearance.\n\n<>The Director\nThe Director acts as the main operational manager of the Medical Department. The Director handles most duties relating to how the Department is run and maintains direct contact to the Overseer. Recieves Level - 5 clearance.\n\n<>The Assistant Director\nThe Assistant Director acts under the Director and helps implement changes within the Department with the Director, and usually helps with managing departmental personnel. Recieves Level - 4 clearance.\n\n<>Board of Health\nThe Board of Health is a group of 3 individuals who have excelled in their duties to the Medical Department and now assist in making vital decisions for the Department. Recieves Level - 4 Clearance."
+        },
+        {
+          "name": "Medium Ranks",
+          "value": "<>Surgeon\n\n<>Physical Therapist\n\n<>Physician"
+        },
+        {
+          "name": "Low Ranks",
+          "value": "<>Nurse\n\n<>Nurse Practitioner\n\n<>Medical Student"
+        }
+      ],
+      "author": {
+        "name": "Overseer of MD",
+        "icon_url": "https://t2.rbxcdn.com/3e120be41353beca0cf08596f12cb4a4"
+      },
+      "footer": {
+        "text": "Dauhxe's SCPF",
+        "icon_url": "https://t0.rbxcdn.com/2c4ae5e7a2b10d4df5dd57dc316c6c32"
+      }
+    }
+  ]
+}
