@@ -1,0 +1,31 @@
+{
+  "content": null,
+  "embeds": [
+    {
+      "title": "Medical Department Information",
+      "description": "Welcome to the Medical Department! The Directorate wishes you a good stay.\nGeneral information about the Medical Department:\n\n[Main SCPF Discord](https://discord.gg/Ra6NNPR)\n\n[MD Discord Permanent Invite](https://discord.gg/cqrssbPSJD)\n\nGuidelines are located in <#909962879229378622>\n\nCurrent Overseer is <@304002526141874187>\nCurrent Director is <>\nCurrent Assistant Director is <>",
+      "color": 3373995,
+      "author": {
+        "name": "Overseer of MD",
+        "icon_url": "https://t2.rbxcdn.com/3e120be41353beca0cf08596f12cb4a4"
+      },
+      "footer": {
+        "text": "Dauhxe's SCPF",
+        "icon_url": "https://t0.rbxcdn.com/2c4ae5e7a2b10d4df5dd57dc316c6c32"
+      }
+    },
+    {
+      "title": "Medical Department Discord Rules",
+      "description": "[1]-> Don't harass, discriminate, or generally be rude to other users. Keep jokes at the expense of others to a minimum.\n\n[2]-> Don't spam channels.\n\n[3]-> Don't post offensive, derogatory, or NSFW content.\n\n[4]-> Respect the high ranks, although if you feel they can do a better job please reccomend so in <#909962474365779968> or their superiors.\n\n[5]-> Try to keep channel topics to their specific channels.",
+      "color": 3373995,
+      "author": {
+        "name": "Overseer of MD",
+        "icon_url": "https://t2.rbxcdn.com/3e120be41353beca0cf08596f12cb4a4"
+      },
+      "footer": {
+        "text": "Dauhxe's SCPF",
+        "icon_url": "https://t0.rbxcdn.com/2c4ae5e7a2b10d4df5dd57dc316c6c32"
+      }
+    }
+  ]
+}
