@@ -42,10 +42,10 @@ module.exports = {
                     .setDescription('Any additional notes.')),
 	async execute(client, interaction) {
         const fs = require('fs');
-        const checkups = require('/app/data/checkup.json');
+        const checkups = require('/app/.data/checkup.json');
 
         function saveData() {
-            fs.writeFile('/app/data/checkup.json', JSON.stringify(checkups), function (err) { 
+            fs.writeFile('/app/.data/checkup.json', JSON.stringify(checkups), function (err) {
                 if (err) throw err;
             });
         }
@@ -61,8 +61,8 @@ module.exports = {
         const Desc = interaction.options.getString('description');
         const Proof = interaction.options.getString('proof');
         let Notes = interaction.options.getString('notes');
-        
-    
+
+
         if (!Notes) {
           Notes = 'N/A';
         }
@@ -72,9 +72,9 @@ module.exports = {
         const gradingChannel = await client.channels.cache.get('910191784678789160')
         const gradeChannel = await client.channels.cache.get('910192523069255720')
 
-        
+
         if (interaction.channel.id == '910191739963330570') {
-          
+
           const row = new MessageActionRow()
               .addComponents(
                 new MessageButton()
@@ -96,7 +96,7 @@ module.exports = {
           const checkUpMessage = await gradingChannel.send({ embeds: [theEmbed], components: [row] });
           //const testNumber = toString(testyf.id);
           checkups.checkup[checkUpMessage.id] = {'user': interaction.user.id};
-          fs.writeFile('/app/data/checkup.json', JSON.stringify(checkups), function (err) {if (err) throw err;});
+          fs.writeFile('/app/.data/checkup.json', JSON.stringify(checkups), function (err) {if (err) throw err;});
           interaction.reply({content: 'Your log was successfully sent.', ephemeral: true});
         } else {
           interaction.reply({content: "Wrong channel.", ephemeral: true})

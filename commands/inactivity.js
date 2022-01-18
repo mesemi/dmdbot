@@ -44,7 +44,7 @@ module.exports = {
             if (request == 'start') {
                 if (!inactivities.inactivities[playa] || inactivities.inactivities[playa] === 0) {
                     inactivities.inactivities[playa] = 1
-                    fs.writeFile('/app/data/inactivity.json', JSON.stringify(inactivities), function (err) { if (err) throw err;});
+                    fs.writeFile('/app/.data/inactivity.json', JSON.stringify(inactivities), function (err) { if (err) throw err;});
                     const role = interaction.guild.roles.cache.get('910139060830486569');
                     interaction.member.roles.add(role);
                     await interaction.reply({ embeds: [startEmbed] });
@@ -62,7 +62,7 @@ module.exports = {
             } else {
                 if (inactivities.inactivities[playa] !== 0) {
                     inactivities.inactivities[playa] = 0;
-                    fs.writeFile('/app/data/inactivity.json', JSON.stringify(inactivities), function (err) { if (err) throw err;});
+                    fs.writeFile('/app/.data/inactivity.json', JSON.stringify(inactivities), function (err) { if (err) throw err;});
                     await interaction.reply({ embeds: [endEmbed] });
                 } else {
                     await interaction.reply({content: "No inactivity to end.", ephemeral: true});
