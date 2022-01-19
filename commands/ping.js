@@ -9,7 +9,7 @@ module.exports = {
       const info = require('/app/embeds/information.json')
       const guidelines = require('/app/embeds/guidelines.json')
       await interaction.channel.send(guidelines)
-      interaction.reply('a')
+      interaction.reply({content: 'ok', ephemeral: true})
     } else {
       await interaction.reply({content: 'Pong!', ephemeral: true});
     }
