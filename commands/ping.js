@@ -11,7 +11,7 @@ module.exports = {
       await interaction.channel.send(guidelines)
       interaction.reply('a')
     } else {
-      await interaction.reply('Pong!');
+      await interaction.reply({content: 'Pong!', ephemeral: true});
     }
 	},
 };

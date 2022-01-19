@@ -34,7 +34,7 @@ client.on('interactionCreate', async interaction => {
       try {
         await command.execute(client, interaction);
       } catch (error) {
-        console.log('[MD Bot] There was an error while trying to execute: ' + command + ' ❌')
+        console.log('[MD Bot] There was an error while trying to execute: ' + interaction.commandName + ' ❌')
         console.error(error);
         return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
       }
@@ -44,7 +44,7 @@ client.on('interactionCreate', async interaction => {
       try {
         await button.execute(client, interaction);
       } catch (error) {
-        console.log('[MD Bot] There was an error while trying to respond to button: ' + button + ' ❌')
+        console.log('[MD Bot] There was an error while trying to respond to button: ' + interaction.customId + ' ❌')
         console.error(error);
         return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
       }
