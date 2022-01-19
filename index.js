@@ -6,6 +6,7 @@ client.buttons = new Collection();
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 const buttonFiles = fs.readdirSync('./buttons').filter(file => file.endsWith('.js'));
+const dataFiles = fs.readdirSync('./.data').filter(file => file.endsWith('.json'));
 
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
@@ -22,6 +23,7 @@ Discord bot made for Dauhxe's Medical Department by mesemi#0758
 
 client.once('ready', () => {
 	console.log(`[MD Bot] Logged in! ✔️`);
+	console.log(`[MD Bot] Currently registered data files: ` + dataFiles)
 });
 
 
